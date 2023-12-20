@@ -4,5 +4,7 @@ resource "aws_instance" "abhi_terraform_server" {
   subnet_id     = aws_subnet.terraform_subnet1.id
   key_name      = "mac_keypair"
   vpc_security_group_ids = ["${aws_security_group.terraform_sg.id}"]
+
+  
 }
 
